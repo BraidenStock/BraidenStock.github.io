@@ -1,11 +1,133 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>My First Web Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my first paragraph.</p>
+
+    <!-- Header -->
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 text-center text-md-start">
+                    <h1>Braiden Stock</h1>
+                    <p><strong>Email:</strong> <a href="mailto:stockbraiden@gmail.com">stockbraiden@gmail.com</a></p>
+                    <p><strong>Phone:</strong> (714) 277-9060</p>
+                    <p><strong>LinkedIn:</strong>
+                        <a href="https://www.linkedin.com/in/braidenstock/">LinkedIn</a>
+                    </p>
+                    <p><strong>GitHub:</strong>
+                        <a href="https://github.com/BraidenStock">GitHub</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="IMG_3201.jpg" class="profile-img" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biography">Biography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#artifacts">Artifacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Biography -->
+    <section id="biography">
+        <div class="container">
+            <h3>Biography</h3>
+            <p>
+                Many people only view games as an activity to waste time and as a form of low brow entertainment,
+                but they are so much more to me. They are how I’ve met long-time friends, stayed connected with family,
+                and experienced stories in ways that other media cannot. The right game can change a person’s life,
+                and that is what I aspire to create.
+            </p>
+        </div>
+    </section>
+
+    <!-- Artifacts -->
+    <section id="artifacts">
+        <div class="container">
+            <h3>Artifacts</h3>
+
+            <!-- Project 1 -->
+            <div class="row artifact-item align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="hydra.png" class="artifact-img" alt="Project Hydra">
+                </div>
+                <div class="col-md-8">
+                    <h4>Project Hydra (In Progress)</h4>
+                    <ul>
+                        <li>3D Metroidvania exploring a mysterious island</li>
+                        <li>Combat system with multiple enemies</li>
+                        <li>Resource collection and crafting</li>
+                        <li>Multi-stage boss fights</li>
+                        <li>Created assets in Blender</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="row artifact-item align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="cat.png" class="artifact-img" alt="Schrodinger's Witness">
+                </div>
+                <div class="col-md-8">
+                    <h4>Schrödinger's Witness</h4>
+                    <ul>
+                        <li>Led a team of four developers</li>
+                        <li>Focused on project management</li>
+                        <li>Explains quantum mechanics through gameplay</li>
+                        <li>Story-driven investigative experience</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="row artifact-item align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="bagel.png" class="artifact-img" alt="Bagels Adventure">
+                </div>
+                <div class="col-md-8">
+                    <h4>Bagels Adventure</h4>
+                    <ul>
+                        <li>2D platformer with movement mechanics</li>
+                        <li>Built in Unity using C#</li>
+                        <li>Includes power-up and health systems</li>
+                        <li>Custom pixel art and animation</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 </body>
+
 </html>

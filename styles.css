@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --green: #198754;
+    --yellow: #ffc107;
+    --dark: #212529;
+}
+
+/* Page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #f8f9fa, #eef7f1);
+    color: var(--dark);
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Layout (no boxes) */
+.container {
+    padding: 30px 20px;
+}
+
+/* Section separators */
+section {
+    padding: 50px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+/* Typography */
+h1 {
+    font-weight: 700;
+    color: var(--green);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--green);
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+li {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+}
+
+/* Links */
+a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background: transparent !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image */
+.profile-img {
+    width: 220px;
+    height: auto;
+    /* let height scale naturally */
+
+    border-radius: 12px;
+
+    border: 4px solid white;
+    outline: 3px solid var(--yellow);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    margin-top: 10px;
+}
+
+/* Artifacts */
+.artifact-item {
+    margin-top: 30px;
+}
+
+.artifact-img {
+    width: 100%;
+    max-width: 512px;
+    border-radius: 10px;
+    border: 3px solid var(--yellow);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+
+    .artifact-img {
+        margin-bottom: 15px;
+    }
+}
